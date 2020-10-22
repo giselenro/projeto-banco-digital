@@ -2,10 +2,12 @@ package br.com.gisele.DigitalBank.dto;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 public class PropostaPassoDoisDto {
 
 	@NotNull @NotEmpty 
+	@Pattern(regexp = "[0-9]{5}-[0-9]{3}", message = "Formato do CEP inválido!" )
 	private String cep;
 	@NotNull @NotEmpty
 	private String rua;

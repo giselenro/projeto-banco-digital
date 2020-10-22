@@ -1,15 +1,21 @@
 package br.com.gisele.DigitalBank.dto;
 
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 public class PropostaPassoDoisDto {
 
-	@NotNull 
+	@NotNull @NotEmpty 
 	private String cep;
+	@NotNull @NotEmpty
 	private String rua;
+	@NotNull @NotEmpty
 	private String bairro;
+	@NotNull @NotEmpty
 	private String complemento;
+	@NotNull @NotEmpty
 	private String cidade;
+	@NotNull @NotEmpty
 	private String estado;
 	
 	public PropostaPassoDoisDto() {

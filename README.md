@@ -54,7 +54,7 @@ db.createUser(
 print('End creating database ##########################')
 ```
 
-6 - Rodar o seguinte comando para criar um container do mongodb no Kubernetes
+6 - Rodar o seguinte comando para criar um container do mongodb
 ```
 docker-compose -f "docker-compose.yml" up -d --build
 ```
